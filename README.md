@@ -1,2 +1,2 @@
-# kravtsovnikita.github.io
+# Кравцов Никита
 my first project
