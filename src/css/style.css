@@ -1,11 +1,33 @@
 body{
 	font-family: Arial, sans-serif;
+	background-color: #fafefd;
+}
+
+.loader{
+	width: 70px;
+	height: 70px;
+	border: 10px solid rgba(209, 120, 2, 0.6);
+	border-radius: 50%;
+	border-left-color: #d17802;	
+	margin: 470px 890px;
+    -webkit-animation: loader 1s linear infinite;
+       -moz-animation: loader 1s linear infinite;
+         -o-animation: loader 1s linear infinite;
+            animation: loader 1s linear infinite;
+	 
+}
+@keyframes loader{
+	100%{
+		transform: rotate(360deg);
+	}
 }
 
 nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+	z-index: 500;
 }
 
 .logo{
@@ -14,6 +36,10 @@ nav{
 	line-height: 60px;
 	padding-left: 388px;
 	float: left;
+	-webkit-animation: coming 2s ease;
+	   -moz-animation: coming 2s ease;
+	     -o-animation: coming 2s ease;
+	        animation: coming 2s ease;
 }
 
 .menu{
@@ -28,6 +54,11 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 0.4s ease forwards;
+	   -moz-animation: topshift 0.4s ease forwards;
+	     -o-animation: topshift 0.4s ease forwards;
+	        animation: topshift 0.4s ease forwards;
+	opacity: 0;
 }
 
 .main{
@@ -41,6 +72,15 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+       -moz-animation: titlemove 1s ease forwards;
+         -o-animation: titlemove 1s ease forwards;
+            animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 0.8s;
+       -moz-animation-delay: 0.8s;
+         -o-animation-delay: 0.8s;
+            animation-delay: 0.8s;
 }
 
 .title__container h1{
@@ -67,7 +107,7 @@ nav{
 }
 
 body h3{
-	padding: 108px 0px 0px 0px ;
+	padding-top: 108px;
 	font-size: 25px;
 	color: #263244;
 	text-align: center;
@@ -79,6 +119,14 @@ body h3{
 	background-color: #d17700;
 	margin: 30px 0px 0px 920px;
 	border-radius: 1px;
+	-webkit-animation: zagolovki 2s ;
+	   -moz-animation: zagolovki 2s ;
+	     -o-animation: zagolovki 2s ;
+	        animation: zagolovki 2s ;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
 }
 
 .radius_img{
@@ -108,7 +156,7 @@ body h3{
 }
 
 .chto_ya_umeu{
-	background: url(../img/fon.png) no-repeat;
+	background: url(../img/fon.png) fixed;
 	width: 100%;
 	height: 60%;
 	border: none;
@@ -309,11 +357,11 @@ body h3{
 }
 
 .statistika{
-	margin: 153px 0px 0px 0px;
-	background: url(../img/statistika.jpg) no-repeat;
-	width: 100%;
+	margin-top: 153px;
+	background: url(../img/statistika.jpg);
+	background-attachment: fixed;
 	height: 60%;
-	background-position: 0px 5px;   
+	width: 100%;
 }
 
 .smile{
@@ -523,6 +571,10 @@ body h3{
 	padding: 16px 0px 0px 32px;
 	font-weight: bold;
 	font-size: 16px;
+	-webkit-animation: here 1s;
+	   -moz-animation: here 1s;
+	     -o-animation: here 1s;
+	        animation: here 1s;
 }
 
 .end{
@@ -532,8 +584,162 @@ body h3{
 	width: 100%;
 }
 
-.text_end{
+p.text_end{
 	color: #FFF;
 	margin: 40px 0px 0px 820px;
 	font-size: 15px;
+	
 }
+
+.menu li a{
+	transition: all, 0.1s;
+	color: white;
+    transform: scale(1);
+    display: inline-block;
+    z-index: 500;
+}
+
+.menu li a:visited{
+	color: white;
+	z-index: 500;
+}
+
+.menu li a:hover{
+	color: #ee8d0d;
+	z-index: 500;
+}
+
+.menu li a:active{
+	transform: scale(1.1);
+	z-index: 500;
+}
+
+main{
+	width: 100%;
+	height: 100%;
+}
+
+.title__container input{
+	transition: all 0.2s;
+	transform: scale(1);	
+}
+
+.title__container input:hover{
+	background: #2c384a;
+	color: white;
+	transform: scale(1.07);
+}
+
+.title__container input:active{
+	transform: scale(1.14);
+}
+
+@keyframes coming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes topshift{
+	
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;	  
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;	  
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;	  
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;	  
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;	  
+}
+
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
+}
+
+input.rezume{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+input.rezume:hover{
+	transform: scale(1.05);		
+}
+input.rezume:active{
+	transform: scale(1.12);		
+}
+
+
+input.site{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+input.site:hover{
+	transform: scale(1.05);		
+}
+input.site:active{
+	transform: scale(1.12);	
+	background: #ee8d0d;
+	border: #EE8D0D;	
+}
+
+
+input.otpravit{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+input.otpravit:hover{
+	transform: scale(1.05);		
+}
+input.otpravit:active{
+	transform: scale(1.12);		
+}
+
+
+.select{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.select:hover{
+	transform: scale(1.03);		
+}
+
+
+@keyframes zagolovki{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
