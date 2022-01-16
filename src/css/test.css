@@ -1,23 +1,12 @@
-body{
-	padding: 50px;
-}
-
 .box{
 	width: 200px;
 	height: 200px;
-	border: 2px solid black;
-	background-color: azure;
-	transition-duration: 2s;
-	transition-timing-function: cubic-bezier(.24,.65,.85,.04);
+	border: 1px solid black;
+	margin: 50px;
 }
 
-.box span{
-	display: block;
-	text-align: center;
-	margin: 90px;
-}
-
-.box:hover{
-	background-color: green;
-	margin-left: 100px;
+@media (min-width: 500px) and (max-width: 600px){
+	.box{
+		height: 500px;
+	}
 }
