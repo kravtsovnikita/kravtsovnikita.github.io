@@ -1,6 +1,7 @@
 "use strict"
+$(document).ready(function(){
 
-var tip = prompt('1 - Cайт - визитка   2 - Корпоративный сайт   3 - Интернет - магазин');
+/* var tip = prompt('1 - Cайт - визитка   2 - Корпоративный сайт   3 - Интернет - магазин');
 if (parseInt(tip) > 3){console.log('Введите корректные данные!')}
 else if(parseInt(tip) < 1){console.log('Введите корректные данные!')}
 else{console.log(tip)}
@@ -54,10 +55,50 @@ function calculate(num1) {
           return console.log(result);
         }
         }; 
-    };
+    };*/
+
+// Анимация чисел
+function outNum(){
+    $('.statistika_numbers').spincrement({
+        thousandSeparator: "",
+        duration: 5000
+    });
+}
+
+let options = {threeshold: [0.5]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.statistika_numbers');
+    elements.each((i,el) => {
+    	observer.observe(el);
+    });
+
+function onEntry (entry){
+	entry.forEach(change => {
+		if(change.isIntersecting){
+			outNum();
+		}
+	});
+}
+
+
+// Якорные ссылки
+$(window).scroll(() >= {
+	let scrollDistance = $(window).scrollTop();
+	$(".section").each(i,el) >= {
+		if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+	    $("nav a").each(i,el) >= {
+	    	if($(el).hasClass("active")){
+	    		$(el).removeClass("active");
+	    	}
+	    }
+		}
+	}
+})
+
+$('nav li:eq('+ i +')').find('a').addClass('active');
 
 
 
-
+});
 
 

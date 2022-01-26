@@ -8,6 +8,7 @@
     <meta property="og:title" content="Это моя первая страница">
     <title>Андрей Браун - Веб-разработчик</title>
     <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\magnific-popup.css">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\font-awesome.css">
     <link rel="stylesheet" href="css\style.css">
@@ -25,12 +26,12 @@
              <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
              <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">           
               <ul>
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Кейсы</a></li>
-                <li><a href="#">Прайс</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#about_me">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#cases">Кейсы</a></li>
+                <li><a href="#price">Прайс</a></li>
+                <li><a href="#comments">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
               </ul>
              </div></div>
 
@@ -41,12 +42,12 @@
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Обо мне</a></li>
-    <li><a class="dropdown-item" href="#">Услуги</a></li>
-    <li><a class="dropdown-item" href="#">Кейсы</a></li>
-    <li><a class="dropdown-item" href="#">Прайс</a></li>
-    <li><a class="dropdown-item" href="#">Отзывы</a></li>
-    <li><a class="dropdown-item" href="#">Контакты</a></li>
+    <li><a class="dropdown-item" href="#about_me">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#services">Услуги</a></li>
+    <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+    <li><a class="dropdown-item" href="#price">Прайс</a></li>
+    <li><a class="dropdown-item" href="#comments">Отзывы</a></li>
+    <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
   </ul>
 </div>
 </div>
@@ -63,13 +64,13 @@
       <div class="title__container mt-5">
        <h1>Привет <br>Я Андрей Браун</h1>
        <h4><i class="fa fa-css3" aria-hidden="true"></i> Фулл стек веб-разаработчик</h4>
-       <input type="button" value="Обо мне">
-       <input type="button" value="Мои работы">      
+       <a href="#about_me"><input type="button" value="Обо мне"></a>
+       <a href="#cases"><input type="button" value="Мои работы"></a>      
      </div>
     </div></div></div>
   </section>
     
-  <section>
+  <section id="about_me">
     <div class="container">
         <h3 align="center">ОБО МНЕ</h3>
          <hr class="horizontal-line mx-auto" style="height: 4px;">
@@ -90,7 +91,7 @@
      <br>
      <br>
   
-  <section>
+  <section id="services">
       <div class="chto_ya_umeu"><div class="container">
         <h3>ЧТО Я УМЕЮ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
           <div class="row">
@@ -109,7 +110,7 @@
       </div></div></div>        
   </section>
     
-  <section>
+  <section id="cases">
     <div class="container">
      <div class="foncases">
       <img src="" alt="">
@@ -135,7 +136,7 @@
     </div>
 
       <div class="visit">
-      <input type="submit" value="Перейти на сайт" class="site">
+      <input type="submit" value="Перейти на сайт" class="site" id="price">
       </div>
 
    </div>
@@ -194,16 +195,16 @@
     <div class="container">
      <div class="row">
      <h3 class="nemnogo">НЕМНОГО СТАТИСТИКИ <hr class="horizontal-line mx-auto" style="height: 4px;"></h3>  
-       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"> <img src="img/smile.png" alt="" class="smile"> <h4 class="one">120</h4><p class="text_one">СЧАСТЛИВЫХ КЛИЕНТОВ</p></div></div>
-       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"> <img src="img/skobki.png" alt="" class="skobki"> <h4 class="two">4600</h4><p class="text_two">ЧАСОВ РАБОТЫ</p></div></div>
-       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"> <img src="img/galochka.png" alt="" class="galochka"> <h4 class="three">340</h4><p class="text_three">ПРОЕКТОВ ЗАВЕРШЕНО</p></div></div>
-       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"> <img src="img/kubok.png" alt="" class="kubok"> <h4 class="four">23</h4><p class="text_four">НАГРАД ПОЛУЧЕНО</p></div></div>
+       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"><img src="img/smile.png" alt="" class="smile"><h4 class="one statistika_numbers">120</h4><p class="text_one">СЧАСТЛИВЫХ КЛИЕНТОВ</p></div></div>
+       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"><img src="img/skobki.png" alt="" class="skobki"><h4 class="two statistika_numbers">4600</h4><p class="text_two">ЧАСОВ РАБОТЫ</p></div></div>
+       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"><img src="img/galochka.png" alt="" class="galochka"><h4 class="three statistika_numbers">340</h4><p class="text_three">ПРОЕКТОВ ЗАВЕРШЕНО</p></div></div>
+       <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center"><div class="ikonki"><img src="img/kubok.png" alt="" class="kubok"><h4 class="four statistika_numbers">23</h4><p class="text_four">НАГРАД ПОЛУЧЕНО</p></div></div>
      </div>
     </div>  
    </div>
-  </section>  
+  </section>
 
-  <section>
+  <section id="comments">
     <div class="container">
      <h3>ОТЗЫВЫ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
        <img src="img/eb.otzivi.png" alt="фотка отзыва тут" class="otzivi_picture d-flex mx-auto">
@@ -217,7 +218,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="contacts">
    <div class="mycontacts">
     <div class="container">
      <h3 class="color_white">МОИ КОНТАКТЫ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
@@ -256,9 +257,11 @@
 
 </main> 
 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.spincrement.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/myScript.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 
