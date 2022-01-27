@@ -59,7 +59,6 @@ nav{
 .menu li{
 	float: left;
 	line-height: 60px;
-	color: #fff;
 	margin-right: 40px;
 	font-size: 14.3px;
 	text-transform: uppercase;
@@ -372,7 +371,7 @@ body h3{
 	color: #1c2534;	
 }        
 
-.tip_saita{
+.calc-item{
 	margin-top: 49px;
 	color: #102031;
 	font-size: 22px;
@@ -410,7 +409,7 @@ body h3{
 	font-size: 18px;
 }
 .srokio{
-	margin-top: 13px;
+	margin-top: 9px;
 	color: #1c2534;
 	font-size: 23px;
 }
@@ -422,6 +421,7 @@ body h3{
 .nesrokio{
 	color: #1c2534;
 	font-size: 23px;
+	margin-top: -5px;
 }
 
 .visitt input{	
@@ -473,6 +473,7 @@ body h3{
     	font-weight: 900;
     	letter-spacing: -2px;
     	color: #323e4f;
+    	opacity: 0;
     }
     .text_one{
     	
@@ -490,6 +491,7 @@ body h3{
     	font-weight: 900;
     	letter-spacing: -2px;
     	color: #323e4f;
+    	opacity: 0;
     }
     .text_two{
     	
@@ -507,6 +509,7 @@ body h3{
     	font-weight: 900;
     	letter-spacing: -2px;
     	color: #323e4f;
+    	opacity: 0;
     }
     .text_three{
     	
@@ -525,6 +528,7 @@ body h3{
     	font-weight: 900;
     	letter-spacing: -2px;
     	color: #323e4f;
+    	opacity: 0;
     }
     .text_four{
     	
@@ -685,7 +689,7 @@ body h3{
 
 .map{
 	background: url(../img/map.jpg) no-repeat;
-	height: 38.5%;
+	height: 38%;
 	width: 100%;
 }
 
@@ -696,7 +700,7 @@ body h3{
 	margin: 129px 0px 0px 864px;
 	background: #FFF;
 	box-shadow: 0 10px 10px -3px #a7baa1;
-	padding: 16px 0px 0px 32px;
+	padding: 14px 0px 0px 32px;
 	font-weight: bold;
 	font-size: 16px;
 	-webkit-animation: here 1s;
@@ -725,15 +729,14 @@ p.text_end{
 
 .menu li a{
 	transition: all, 0.1s;
-	color: white;
     transform: scale(1);
     display: inline-block;
     z-index: 500;
     text-decoration: none;
+    color: #FFF;
 }
 
 .menu li a:visited{
-	color: white;
 	z-index: 500;
 }
 
@@ -744,6 +747,13 @@ p.text_end{
 
 .menu li a:active{
 	transform: scale(1.1);
+	z-index: 500;
+	color: #ee8d0d;
+}
+
+.scroll-to.active{
+	transform: scale(1.2);
+	color: #ee8d0d;
 	z-index: 500;
 }
 

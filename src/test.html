@@ -14,22 +14,47 @@
 
 <body>
 
+<div class="container-calc">
+     <h2>Калькулятор расчета стоимости услуг</h2> 
+    <div class="calc-item">
+         <h3>Тип сайта</h3>
 
+        <select name='type_site' id="type_site">
+            <option value="0">Выберите пункт...</option>
+            <option value="1190">Сайт - визитка</option>
+            <option value="2290">Корпоративный сайт</option>
+            <option value="3190">Интернет - магазин</option>
+        </select>
+    </div>
+    
+    <div class="calc-item">
+         <h3>Дизайн</h3> 
+        <select name='design' id="design">
+            <option value="0">Выберите пункт...</option>
+            <option value="1990">Простой</option>
+            <option value="4990">Заказной</option>
+        </select>
+    </div>
 
-<div class="wrap">
-  <div class="element-big green"></div>
-  <div class="element-animation">
-    <span>Элемент, который появляется</span>
-  </div>
-  <div class="element-big red"></div>
+    <div class="calc-item">
+         <h3>Адаптивность</h3> 
+        <select name='adaptivnost' id="adaptivnost">
+            <option value="0">Выберите пункт...</option>
+            <option value="1990">Только для ПК</option>
+            <option value="2390">Только для Мобильных устройств</option>
+            <option value="4090">Всё включено</option>
+        </select>
+    </div>
+   
+    <div class="calc-item">Стоимость: <span id="total">0.00</span> руб</div>
+
 </div>
 
-
-
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/myScript.js"></script>
+<script src="js/jquery.spincrement.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/myScript.js"></script>
 
 </body>      
 

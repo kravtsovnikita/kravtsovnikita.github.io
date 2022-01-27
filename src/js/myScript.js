@@ -57,33 +57,81 @@ function calculate(num1) {
         }; 
     };*/
 
-// Анимация чисел
-function outNum(){
-    $('.statistika_numbers').spincrement({
-        thousandSeparator: "",
-        duration: 5000
+
+//Анимация чисел 
+var show = true;
+    var countbox = ".statistika";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.statistika_numbers').css('opacity', '1');
+            $('.statistika_numbers').spincrement({
+                thousandSeparator: "",
+                duration: 4000
+            });
+             
+            show = false;
+        }
     });
-}
 
-let options = {threeshold: [0.5]};
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.statistika_numbers');
-    elements.each((i,el) => {
-    	observer.observe(el);
+
+//Активные пункты меню при прокрутке страницы
+var positions = [], //сюда сложим на загрузке страницы позиции наших "якорных" блоков, чтобы не считать их каждый раз. и сюда же положим ссылки на соответствующие a.scroll-to
+    currentActive = null, //здесь будет храниться id текущего блока, чтобы не менять классы по 100 раз за одну прокрутку 
+    links = $('.scroll-to'); //сохраним массив всех a.scroll-to
+
+$(".anchor").each(function(){ //перебираем блоки, сохраняем позиции и ссылки на пункты меню
+    positions.push({
+        top: $(this).position().top - 100,
+        a: links.filter('[href="#'+$(this).attr('id')+'"]')
+    });
+});
+
+//делаем реверс массива, чтобы при скролле перебирать его с конца и выходить из цикла при нахождении
+//зачем нам проверять каждый блок, если прокрутка уже ниже последнего, верно?
+positions = positions.reverse(); 
+
+$(window).on('scroll',function() {
+    var winTop = $(window).scrollTop();
+    for(var i = 0; i < positions.length; i++){
+        if(positions[i].top < winTop){ //если прокрутка страницы ниже нашего блока
+            if(currentActive !== i){ //и если мы еще не добавили класс текущему блоку
+                currentActive = i;
+                links.filter('.active').removeClass('active'); //снимаем класс .active с текущего пункта меню
+                positions[i].a.addClass("active");
+            }
+            break; //выходим из цикла, не нужно проверять блоки, которые выше
+        }
+    }
+});
+
+
+//Калькулятор расчета стоимости
+$("select").change(function () {
+    calculate();
+});
+
+
+function calculate() {
+    var sum = 0;
+
+    $("select[name='adaptivnost'], select[name='design']").each(function () {
+
+        sum += isNaN(this.value) || $.trim(this.value) === '' ? 0 : parseFloat(this.value);
+
     });
 
-function onEntry (entry){
-	entry.forEach(change => {
-		if(change.isIntersecting){
-			outNum();
-		}
-	});
+    var a = parseInt($("#type_site").val(), 10);
+
+    var total = a + sum;
+
+    $("#total").html(total.toFixed(2));
 }
-
-
-// Якорные ссылки
-
-
 
 
 
