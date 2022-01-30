@@ -130,8 +130,18 @@ function calculate() {
 
     var total = a + sum;
 
+    var total_sroki = total / 1500;
+
     $("#total").html(total.toFixed(2));
+    $("#total_sroki").html(total_sroki.toFixed());
 }
+
+
+//Жмякаешь на img она на весь экран открывается
+$('.test-popup-link').magnificPopup({
+  type: 'image'
+  // other options
+});
 
 
 

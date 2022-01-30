@@ -17,6 +17,18 @@
     
 <body>
  
+ <div class="container">
+  <div class="row">
+  <div id="parent_popup">
+   <div id="popup" class="col-xxl-4 col-xl-5 col-lg-6 col-md-7 col-sm-10 text-center mx-auto">
+    <a class="close col-1 offset-10" title="Закрыть" onclick="document.getElementById('parent_popup').style.display='none';">close</a>
+    <p class="text_popup mx-auto col-11">За подписку на все наши соцсети - скидка <b>20%</b></p>   
+   </div>
+  </div>
+  <script ENGINE="text/javascript">var delay_popup = 15000;setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);</script>
+  </div>
+ </div>
+ 
  <div class="loader"></div>
 
    <header>   
@@ -118,7 +130,32 @@
           <p class="text_cases text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima alias velit nesciunt, eius consectetur.</p>
     </div>
  
-    <div><img src="img/eb.picture.png" alt="мои работы тут типа" class="bigpicture d-flex mw-100 mx-auto"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a class="test-popup-link" href="img/eb.picture.png"><img src="img/eb.picture.png" class="bigpicture d-flex mw-100 mx-auto" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a class="test-popup-link" href="img/eb.picture.png"><img src="img/eb.picture.png" class="bigpicture d-flex mw-100 mx-auto" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a class="test-popup-link" href="img/eb.picture.png"><img src="img/eb.picture.png" class="bigpicture d-flex mw-100 mx-auto" alt="..."></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
    
    <div class="row">
         
@@ -180,10 +217,10 @@
     <hr class="horizontal-linee mw-100" style="height: 2px;">  
 
     <div class="col-5"><p class="sroki">Сроки</p></div>
-    <div class="col-7 text-end"><span class="srokio">0</span> дней</div>
+    <div class="col-7 text-end" class="calc-item" style="color: #3f495a"><span class="srokio" id="total_sroki">0</span> дней</div>
 
     <div class="col-5"><p class="nesroki">Стоимость</p></div>
-    <div class="col-7 text-end" class="calc-item"><span class="nesrokio" id="total">0</span> руб</div>
+    <div class="col-7 text-end" class="calc-item" style="color: #3f495a"><span class="nesrokio" id="total">0</span> руб</div>
 
     </div>
      <div class="visitt"><input type="submit" value="Оставить заявку" class="site d-flex mx-auto"></div>
@@ -207,12 +244,44 @@
    </div>
   </section>
 
+
   <section id="comments" class="anchor">
     <div class="container">
      <h3>ОТЗЫВЫ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
-       <img src="img/eb.otzivi.png" alt="фотка отзыва тут" class="otzivi_picture d-flex mx-auto">
-         <p class="text_otzivi">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Impedit debitis quibusdam eum aspernatur <br>recusandae libero nihil, quasi neque enim perspiciatis.</p>
-         <p class="secondtext_otzivi"><b>Михаил</b>,Ген директор ПАО "Газпром"</p> 
+
+     <div id="carouselExampleFade" class="abc carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active col-6 text-center" data-bs-interval="3000">
+      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <p class="text_otzivi">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Impedit debitis quibusdam eum aspernatur <br>recusandae libero nihil, quasi neque enim perspiciatis.</p>
+      <p class="secondtext_otzivi"><b>Михаил</b>,Ген директор ПАО "Газпром"</p>
+    </div>
+    <div class="carousel-item col-6 text-center" data-bs-interval="3000">
+      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <p class="text_otzivi">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Hic sequi similique voluptatem libero <br> nulla nihil tempore et qui minima quis.</p>
+      <p class="secondtext_otzivi"><b>Александр</b>, Менеджер ООО ТК "Альфа-Плюс"</p>
+    </div>
+    <div class="carousel-item col-6 text-center" data-bs-interval="3000">
+      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <p class="text_otzivi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam sapiente cum saepe maxime <br> quod tenetur rerum officia non, enim nesciunt fuga culpa nisi vel <br>laborum ipsum, necessitatibus optio.</p>
+      <p class="secondtext_otzivi"><b>Виктор</b>, Руководитель товарного направления ООО "КРИСТАЛЛ"</p>
+    </div>
+    <div class="carousel-item col-6 text-center" data-bs-interval="5000">
+      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <p class="text_otzivi">Очень доволен, помогает с любыми вопросами. Только самая нужная информация в <br>видеоуроках от человека с огромным опытом в этой сфере. Даже если компьютеры <br>не ваше, вас научат, вам объяснят и круто в общем всё <3</p>
+      <p class="secondtext_otzivi"><b>Никита</b>, Обучающийся у Андрея Брауна</p>
+    </div>
+  </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
           <div class="row col-12 mx-auto justify-content-center"> 
            <div class="tochki"><img src="img/orangedot.png" alt="." class="tochkiO"></div>
            <div class="tochki"><img src="img/greydot.png" alt="." class="tochkiOO"></div>
@@ -221,6 +290,7 @@
     </div>
   </section>
 
+ 
   <section id="contacts" class="anchor">
    <div class="mycontacts">
     <div class="container">
