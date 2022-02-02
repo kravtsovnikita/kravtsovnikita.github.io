@@ -53,39 +53,6 @@
  <div class="container">
      <h3>ОТЗЫВЫ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
 
-<div id="carouselExampleFade" class="abc carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active col-6 text-center" data-bs-interval="5000">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
-      <p class="text_otzivi">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Impedit debitis quibusdam eum aspernatur <br>recusandae libero nihil, quasi neque enim perspiciatis.</p>
-      <p class="secondtext_otzivi"><b>Михаил</b>,Ген директор ПАО "Газпром"</p>
-    </div>
-    <div class="carousel-item col-6 text-center" data-bs-interval="5000">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
-      <p class="text_otzivi">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Hic sequi similique voluptatem libero <br> nulla nihil tempore et qui minima quis.</p>
-      <p class="secondtext_otzivi"><b>Александр</b>, Менеджер ООО ТК "Альфа-Плюс"</p>
-    </div>
-    <div class="carousel-item col-6 text-center" data-bs-interval="5000">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
-      <p class="text_otzivi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam sapiente cum saepe maxime <br> quod tenetur rerum officia non, enim nesciunt fuga culpa nisi vel <br>laborum ipsum, necessitatibus optio.</p>
-      <p class="secondtext_otzivi"><b>Виктор</b>, Руководитель товарного направления ООО "КРИСТАЛЛ"</p>
-    </div>
-    <div class="carousel-item col-6 text-center" data-bs-interval="8000">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
-      <p class="text_otzivi">Очень доволен, помогает с любыми вопросами. Только самая нужная информация в <br>видеоуроках от человека с огромным опытом в этой сфере. Даже если компьютеры <br>не ваше, вас научат, вам объяснят и круто в общем всё <3</p>
-      <p class="secondtext_otzivi"><b>Никита</b>, Обучающийся у Андрея Брауна</p>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Предыдущий</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Следующий</span>
-  </button>
-</div>
-
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -95,13 +62,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/eb.otzivi.png" class="otzivi_picture d-flex mx-auto" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -115,10 +82,59 @@
 </div>
 
 
+
+<form action="php/test.php" method="post">
+ <div class="container">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" required name="user_email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Телефон</label>
+    <div class="col-sm-10">
+      <input type="phone" required name="user_phone" class="form-control" id="inputTel">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Вы первый раз на этом сайте?</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Да
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Нет
+        </label>
+      </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" name="check" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Пользовательское соглашение
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto"><button type="submit" class="btn btn-primary">Отправить</button></div>
+  </div>
+</form>
+
+
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/maskedinput.min.js"></script>
 <script src="js/myScript.js"></script>
 
 </body>      

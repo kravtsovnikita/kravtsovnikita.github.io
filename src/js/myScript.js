@@ -143,7 +143,8 @@ $('.test-popup-link').magnificPopup({
   // other options
 });
 
-
+//уроки
+$("#inputTel").mask("+7(999) 999-9999");
 
 });
 
