@@ -8,7 +8,7 @@
 
 body{
 	font-family: Arial, sans-serif;
-	background-color: #fafefd;
+	background-color: #fff;
 }
 
 /*
@@ -79,7 +79,7 @@ body{
 nav{
 	width: 100%;
 	height: 60px;
-	background: #344051;
+	background: #4b4a4d;
 	position: fixed;
 	z-index: 500;
 }
@@ -116,12 +116,12 @@ nav{
 .main{
 	width: 100%;
 	height: 100%;
-	background: url(../img/shadow.png) 90% 104% no-repeat, url(../img/man.png) 90% 100%/auto 85% no-repeat , url(../img/bgg.jpg) 100% no-repeat;
+	background: url(../img/shadow.png) 90% 105% no-repeat, url(../img/man.png) 90% 100%/auto 85% no-repeat , url(../img/bgg2.jpg) 100%  68% no-repeat;
 } 
 
 .title__container{
 	float: left;
-    color: #2c384a;
+    color: #2e4f66;
     text-align: center;
     width: 100%;
     opacity: 0;
@@ -162,7 +162,7 @@ nav{
 body h3{
 	padding-top: 108px;
 	font-size: 25px;
-	color: #263244;
+	color: #2e4f66;
 	text-align: center;
 }
 
@@ -184,7 +184,7 @@ body h3{
 
 .radius_img{
 	margin-top: 60px;
-	background: url(../img/radiusman.png);
+	background: url(../img/radiusman2.png);
 	height: 200px;
 	width: 200px;
 	background-repeat: no-repeat;
@@ -192,7 +192,7 @@ body h3{
 
 .text_radius_img{
 	margin-top: 27px;
-	color: #3f495a;
+	color: #79818d;
 }
 
 .rezume{
@@ -202,14 +202,14 @@ body h3{
 	margin-top: 37px;
 	border-radius: 6px;
 	background: url(../img/icone.png) no-repeat 8px 7px;
-	color: #6f707e;
+	color: #79818d;
 	text-indent: 17px;
 	font-size: 14px;
 	font-weight: bold;
 }
 
 .chto_ya_umeu{
-	background: url(../img/fon.png) fixed;
+	background: url(../img/fon2.png) fixed;
 	border: none;
 	width: 100%;
 	padding-bottom: 90px;
@@ -226,7 +226,7 @@ body h3{
 }
 
         .cvet{
-  	     color: #cf7600;
+  	     color: #ee8d0d;
   	     font-weight: bold;
   	     margin-top: 38px;
   	     white-space: nowrap;
@@ -236,7 +236,7 @@ body h3{
   	     margin-top: 20px;
   	     text-align: center;
   	     white-space: nowrap;
-  	     color: #3f495a;
+  	     color: #2a4d66;
          }
 
 .znak{
@@ -244,7 +244,7 @@ body h3{
 }
 
         .cvett{
-  	     color: #cf7600;
+  	     color: #ee8d0d;
   	     font-weight: bold;
   	     margin-top: 36px;
   	     white-space: nowrap;
@@ -252,7 +252,7 @@ body h3{
 
         .textt{
   	     margin-top: 20px;
-  	     color: #3f495a;
+  	     color: #2a4d66;
   	     white-space: nowrap;
          }
 
@@ -261,7 +261,7 @@ body h3{
 }
 
         .cvettt{
-  	     color: #cf7600;
+  	     color: #ee8d0d;
   	     font-weight: bold;
   	     margin-top: 30px;
   	     white-space: nowrap;
@@ -269,7 +269,7 @@ body h3{
 
          .texttt{
   	      margin-top: 18px;
-  	      color: #3f495a;
+  	      color: #2a4d66;
   	      white-space: nowrap;
          }
 
@@ -278,7 +278,7 @@ body h3{
 }
 
         .cvetttt{
-  	     color: #cf7600;
+  	     color: #ee8d0d;
   	     font-weight: bold;
   	     margin-top: 33px;
   	     white-space: nowrap;
@@ -286,7 +286,7 @@ body h3{
 
          .textttt{
   	      margin-top: 18px;
-  	      color: #3f495a;
+  	      color: #2a4d66;
   	      white-space: nowrap;
          } 
 
@@ -296,7 +296,7 @@ body h3{
 
 .text_cases{
 	
-	color: #3f495a;
+	color: #2a4d66;
 }
 
 .bigpicture{
@@ -318,7 +318,7 @@ body h3{
 }
         .client{
          
-         color: #384354;
+         color: #2e4f66;
          font-weight: bold;	
          white-space: nowrap;
          font-size: 16px;
@@ -326,30 +326,30 @@ body h3{
             .clientp{
              	
              white-space: nowrap;
-             color: #3F495A;
+             color: #2a4d66;
              }
 
         .website{
          
-         color: #384354;
+         color: #2e4f66;
          font-size: 16px;
          font-weight: bold;
          }  
              .websitep{
              	
              	white-space: nowrap;
-             	color: #3F495A;
+             	color: #2a4d66;
              }
 
         .nazvanie{
          
          
-         color: #384354;
+         color: #2e4f66;
          font-size: 16px;
          font-weight: bold;
          }
              .nazvaniep{            	
-             	color: #3F495A;
+             	color: #2a4d66;
              	line-height: 20px;
              	
              }
@@ -357,8 +357,8 @@ body h3{
 
 .visit input{	
 	border: 1px solid;
-	border-color: #63b5ae;
-	background: #63B5AE;
+	border-color: #ee8d0d;
+	background: #ee8d0d;
 	height: 44px;
 	width: 201px;
     border-radius: 5px;
@@ -415,12 +415,12 @@ body h3{
 .stoimost{
 	
 	font-size: 35px;
-	color: #1c2534;	
+	color: #2e4f66;	
 }        
 
 .calc-item{
 	margin-top: 49px;
-	color: #102031;
+	color: #2e4f66;
 	font-size: 22px;
 }
 
@@ -434,7 +434,7 @@ body h3{
 	padding: 3px 0px 0px 23px;
 	padding-right: 1.2em;
 	appearance: none;
-	background: url(../img/arroww.png) no-repeat#eeeeee;
+	background: url(../img/arroww2.png) no-repeat #f0f3f5;
 	background-position: 844px 27px;
 }
 @media (max-width: 1199px){
@@ -452,7 +452,7 @@ body h3{
 
 .sroki{
 	margin-top: 13px;
-	color: #1c2534;
+	color: #2e4f66;
 	font-size: 18px;
 }
 .srokio{
@@ -462,7 +462,7 @@ body h3{
 }
 
 .nesroki{
-	color: #1c2534;
+	color: #2e4f66;
 	font-size: 18px;
 }
 .nesrokio{
@@ -473,8 +473,8 @@ body h3{
 
 .visitt input{	
 	border: 1px solid;
-	border-color: #63b5ae;
-	background: #63B5AE;
+	border-color: #ee8d0d;
+	background: #ee8d0d;
 	height: 44px;
 	width: 201px;
     border-radius: 5px;
@@ -505,7 +505,7 @@ body h3{
 
 .statistika{
 	margin-top: 153px;
-	background: url(../img/statistika.jpg);
+	background: url(../img/statistika2.jpg);
 	background-attachment: fixed;
 	height: 60%;
 	width: 100%;
@@ -642,9 +642,9 @@ body h3{
 
 .mycontacts{
 	margin-top: 150px;
-	background: url(../img/mycontacts_fone.jpg) no-repeat;
+	background: url(../img/mycontacts_fone2.jpg) no-repeat;
 	width: 100%;
-	height: 805px;
+	height: 57rem;
 }
 
 .color_white{
@@ -673,6 +673,13 @@ body h3{
         	white-space: nowrap;
         	line-height: 22px;
         }
+        .geo_text:hover{
+        	transform: scale(1.03);
+        }
+        .geo_text:active{
+        	color: #CF7600;
+        	transform: scale(1.07);
+        }
    
    .konvert{
    	 margin-top: 28px;
@@ -681,6 +688,14 @@ body h3{
         	color: #FFF;
         	margin-top: 12px;
         	white-space: nowrap;
+        	transform: scale(1)
+        }
+        .konvert_text:hover{
+        	transform: scale(1.03);
+        }
+        .konvert_text:active{
+        	color: #CF7600;
+        	transform: scale(1.07);
         }
    
    .telefon{
@@ -690,6 +705,14 @@ body h3{
         	color: #FFF;
         	margin-top: 13px;
         	white-space: nowrap;
+        	transform: scale(1)
+        }
+        .telefon_text:hover{
+        	transform: scale(1.03);
+        }
+        .telefon_text:active{
+        	color: #CF7600;
+        	transform: scale(1.07);
         }
  
  .sms{
@@ -758,7 +781,7 @@ body h3{
 
 .end{
 	border: 1px solid #354051;
-	background: #354051;
+	background: #4b4a4d;
 	height: 75px;
 	width: 100%;
 }
@@ -815,13 +838,11 @@ main{
 }
 
 .title__container input:hover{
-	background: #2c384a;
-	color: white;
-	transform: scale(1.07);
+	transform: scale(1.08);
 }
 
 .title__container input:active{
-	transform: scale(1.14);
+	transform: scale(1.15);
 }
 
 @keyframes coming{
@@ -893,8 +914,8 @@ input.site:hover{
 }
 input.site:active{
 	transform: scale(1.12);	
-	background: #ee8d0d;
-	border: #EE8D0D;	
+	background: #79818d;
+	border: #79818d;	
 }
 
 
@@ -968,6 +989,10 @@ input.otpravit:active{
 		position: absolute;
 		background: rgba(0, 0, 0, 0.4);	
 	}
+}
+
+.animate__animated.animate__pulse{
+	animation-iteration-count: infinite;
 }
 
 

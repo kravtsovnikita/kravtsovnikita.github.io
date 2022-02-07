@@ -143,8 +143,19 @@ $('.test-popup-link').magnificPopup({
   // other options
 });
 
-//уроки
-$("#inputTel").mask("+7(999) 999-9999");
+
+//wow
+new WOW().init();
+
+
+//проверка полей
+$('form').submit(function(event){
+  if($("#inputName").val() == "" || $("#inputEmail").val() == ""){
+    event.preventDefault();
+    alert("Введите корректные данные");
+  }
+})
+
 
 });
 
