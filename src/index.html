@@ -294,23 +294,24 @@
     <div class="container">
      <h3 class="color_white">МОИ КОНТАКТЫ<hr class="horizontal-line mx-auto" style="height: 4px;"></h3>
        <p class="text_mycontacts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, esse quia exercitationem qui.</p>
+       
         <div class="row justify-content-center">
          <div class="ikonki col-lg-2 col-md-3 col-sm-4 col-12 text-center d-sm-block d-none"><img src="img/geo.png" alt="" class="geo"><p class="geo_text"><a href="#map" style="text-decoration: none;color: #fff;" title="Перейти на карту">Ростов-на-Дону<br>Рыльского 1</a></p></div>
          <div class="ikonki col-lg-2 col-md-3 col-sm-4 col-6 text-center"><img src="img/konvert.png" alt="" class="konvert"><p class="konvert_text"><a href="mailto:kravtsovn327@gmail.com?subject=Помощь" title="Написать" style="text-decoration: none;color: #fff;">kravtsovn327@gmail.com</a><br>(Написать)</p></div>
          <div class="ikonki col-lg-2 col-md-3 col-sm-4 col-6 text-center"><img src="img/telefon.png" alt="" class="telefon"><p class="telefon_text"><a href="tel:+79185751611" title="Позвонить" style="text-decoration: none;color: #fff;">+7 918 575-16-11</a><br>(Позвонить)</p></div>
          <div class="ikonki col-12 text-center d-sm-none d-block"> <img src="img/geo.png" alt="" class="geo"><p class="geo_text"><a href="#map" style="text-decoration: none;color: #fff;" title="Перейти на карту">Ростов-на-Дону<br>Рыльского 1</a></p></div>
          </div>
-     
+        
      <h4 class="sms text-center animate__animated animate__pulse">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-      <form action="">
+      <form action="php/mail.php" method="post">
        <div class="row justify-content-center">
 
-       <div class="col-6 text-end wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><input type="name" id="inputName" placeholder="Имя" class="name mw-100"></div>
+       <div class="col-6 text-end wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><input type="name" name="user_name" id="inputName" placeholder="Имя" class="name mw-100"></div>
 
-       <div class="col-6 text-start wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><input type="email" id="inputEmail" placeholder="Email" class="email mw-100"></div>
+       <div class="col-6 text-start wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><input type="email" name="user_email" id="inputEmail" placeholder="Email" class="email mw-100"></div>
 
          <br>
-           <div class="col-12 text-center wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><textarea name="" id="" cols="35" rows="5" placeholder="Сообщение" class="text_sms mw-100" style="margin-top: 14px;"></textarea></div>
+           <div class="col-12 text-center wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><textarea type="message" name="user_message" id="message" cols="35" rows="5" placeholder="Сообщение" class="text_sms mw-100" style="margin-top: 14px;"></textarea></div>
          <br></div>
        <div class="wow animate__animated animate__flip" data-wow-delay="0.5s"><input type="submit" value="Отправить" class="otpravit d-flex mx-auto"></div>
       </form>
